@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO APPS</title>
+    <link rel="shortcut icon" href="./letter-case.png" type="image/x-icon">
+   
+    <!-- tailwind and daisyui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+<style>
+  .note {
+    margin-bottom: 20px; /* Add a gap between note divs */
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    text-align: center;
+}
+.hover{
+  cursor: pointer;
+}
+</style>
+
+</head>
+<body>
+  <!-- Main section -->
+    <main class="max-w-screen-sm mx-auto px-4 md:px-16 lg:px-24
+    md:border-none border-4 border-[#f0f0f0] min-h-screen py-4">
+
+    <!-- To Do Apss tittle -->
+       <h1 class="text-center text-2xl font-bold">TODO APPS <span><i class="fa-solid fa-list-check"></i></span></h1>
+
+        <!-- Take notes from users -->
+       <div class="max-w-screen-sm mx-auto px-4 
+       lg:text-center py-4 relative flex my-2 " >
+        <input id="inputField" type="text" placeholder="Add new task" class="input input-bordered input-sm w-full focus:outline-none pr-8" />
+    
+        <!-- Add notes button -->
+        <button id="addNewbtn" class="rounded-sm"><span><i class="fa-solid fa-square-plus fa-2xl absolute right-4"></i></span></button>
+      </div>
+
+     <!-- notes container -->
+
+      <div class="block mx-auto w-11/12 rounded-sm ">
+        <ol id="notesContainer" class="list-decimal list-inside marker:text-lg marker:font-mono">
+         <!-- Note will be written here -->
+        </ol>
+     </div>
+
+    </main>
+    
+
+ <script src="./script.js"></script>
+</body>
+</html>
