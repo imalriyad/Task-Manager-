@@ -14,7 +14,7 @@ document.getElementById('addNewbtn').addEventListener('click',function(){
     noteDiv.appendChild(noteContent);
    
     const iconElement = document.createElement('i');
-    iconElement.classList.add('fa-solid', 'fa-trash','mt-6','hover');
+    iconElement.classList.add('fa-solid','fa-trash','mt-6','hover');
     noteDiv.appendChild(iconElement)
 
     notesContainer.appendChild(noteDiv);
